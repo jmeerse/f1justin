@@ -2,10 +2,11 @@ install.packages("f1dataR")
 library(f1dataR)
 library(tidyverse)
 
-load_drivers(2025)
+py_require("pip")
+#load_drivers(2025)
 clear_cache()
 
-py_require("pip")
+
 
 laps2025 <- load_laps(season = 2025) #doesn't work
 
